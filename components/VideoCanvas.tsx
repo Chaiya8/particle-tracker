@@ -3,7 +3,8 @@ import { ParsedTracks } from "@/utils/parseTracks";
 
 interface VideoCanvasProps {
   videoFile: File | null;
-  trackData: ParsedTracks | null; // Replace with your track data type
+  
+  trackData: ParsedTracks | null; 
 };
 
 
