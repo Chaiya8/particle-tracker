@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.ipynb_checkpoints
+__pycache__
+data
+WindowsPowerShell
+datasets
+frames
