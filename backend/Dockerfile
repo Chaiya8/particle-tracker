@@ -2,9 +2,9 @@ FROM continuumio/miniconda3:latest
 
 WORKDIR /app
 
-COPY environment.yaml .
+COPY environment-deploy.yaml .
 
-RUN conda env create -f environment.yaml
+RUN conda env create -f environment-deploy.yaml
 
 COPY . .
 
