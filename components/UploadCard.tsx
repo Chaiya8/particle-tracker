@@ -5,6 +5,7 @@ type UploadCardProps = {
   onChange: (files: File[]) => void;
   folder?: boolean;
 };
+
 export default function UploadCard({
   title,
   subtitle,
@@ -19,7 +20,6 @@ export default function UploadCard({
         type="file"
         accept={accept}
         multiple={folder}
-        {...(folder ? { webkitdirectory: "" } : {})}
         onChange={(e) => {
           const files = Array.from(e.target.files || []);
           onChange(files);
